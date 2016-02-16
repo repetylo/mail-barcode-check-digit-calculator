@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>mail barcode check digit calculator</title>
+		<link rel="stylesheet" href="css/style.css">  
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<span>Введіть код</span>
+				<input type="text" name="barcode" onkeydown="if (event.keyCode == 13) { formChanged(); return false; }"/>
+				<input type="button" onclick="formChanged()" value="Розрахувати">
+				<p id="error"></p>
+				<p >Контрольна сума: <span id="controlSum"></span></p>
+				<p >Код поштового відправлення: <span id="barcode"></span></p>
+			</div>
+		</div>
+		<script src="js/index.js"></script>
+	</body>
+</html>

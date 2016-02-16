@@ -1,0 +1,7 @@
+.container {
+  min-width: 400px;
+  margin: 15% 30%;
+}
+#error {
+  color: red;
+}
